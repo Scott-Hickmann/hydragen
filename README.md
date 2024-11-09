@@ -51,7 +51,7 @@ The fastest way to start generating text with Hydragen is using `scripts/run.py`
 python scripts/run.py --pretrained-name princeton-nlp/Sheared-LLaMA-1.3B --dtype float16 --prompts "Attention is" --num-return-sequences 4 --max-new-tokens 8
 
 # Complete the prompts "Attention is all you need" and "Attention is not all you need", sharing the portion "Attention is".
-python scripts/run.py --pretrained-name princeton-nlp/Sheared-LLaMA-1.3B --dtype float16 --prompts "Attention is" --prompts "all you need|not all you need" --num-return-sequences 1 --max-new-tokens 8
+python scripts/run.py --pretrained-name princeton-nlp/Sheared-LLaMA-1.3B --dtype float16 --prompts "A man and a" --prompts "girl|boy" --prompts "with a dog named|fell down the stairs of|walked on Street|swam in the ocean full of:" --num-return-sequences 1 --max-new-tokens 8
 ```
 
 # Using Hydragen Models in Code
